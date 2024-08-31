@@ -105,7 +105,6 @@ namespace SampleCSharpUI
         # Event handler for Button click
         $button.Add_Click({
             $selectedItem = $listBox.SelectedItem
-            $textBoxText = $textBox.Text
 
             if ($selectedItem -eq "Python" -or $selectedItem -eq "HTML" -or $selectedItem -eq "C#") {
                 $textBox.Text = $selectedItem

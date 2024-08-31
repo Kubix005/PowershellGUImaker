@@ -58,7 +58,6 @@ public class SampleJavaUI {
         # Event handler for Button click
         $button.Add_Click({
             $selectedItem = $listBox.SelectedItem
-            $textBoxText = $textBox.Text
 
             if ($selectedItem -eq "Java") {
                 $textBox.Text = $selectedItem

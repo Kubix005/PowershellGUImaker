@@ -60,7 +60,6 @@ $form.ShowDialog()
         # Event handler for Button click
         $button.Add_Click({
             $selectedItem = $listBox.SelectedItem
-            $textBoxText = $textBox.Text
 
             if ($selectedItem -eq "PowerShell") {
                 $textBox.Text = $selectedItem

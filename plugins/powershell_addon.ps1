@@ -11,7 +11,7 @@ if ($null -ne $form) {
     $richTextBox = $form.Controls | Where-Object { $_ -is [System.Windows.Forms.RichTextBox] }
     $button = $form.Controls | Where-Object { $_ -is [System.Windows.Forms.Button] -and $_.Text -eq "Write template" }
 
-    if ($listBox -ne $null -and $textBox -ne $null -and $richTextBox -ne $null -and $button -ne $null) {
+    if ($null -ne $listBox -and $null -ne $textBox -and $null -ne $richTextBox -and $null -ne $button) {
         # Add "PowerShell" to the ListBox items if it's not already present
         if (-not $listBox.Items.Contains("PowerShell")) {
             $listBox.Items.Add("PowerShell")

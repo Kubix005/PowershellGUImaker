@@ -9,9 +9,8 @@ if ($null -ne $form) {
     $listBox = $form.Controls | Where-Object { $_ -is [System.Windows.Forms.ListBox] }
     $textBox = $form.Controls | Where-Object { $_ -is [System.Windows.Forms.TextBox] }
     $richTextBox = $form.Controls | Where-Object { $_ -is [System.Windows.Forms.RichTextBox] }
-    $button = $form.Controls | Where-Object { $_ -is [System.Windows.Forms.Button] -and $_.Text -eq "Write template" }
 
-    if ($listBox -ne $null -and $textBox -ne $null -and $richTextBox -ne $null -and $button -ne $null) {
+    if ($null -ne $listBox -and $null -ne $textBox -and $null -ne $richTextBox) {
         # Add "Java" to the ListBox items if it's not already present
         if (-not $listBox.Items.Contains("Java")) {
             $listBox.Items.Add("Java")

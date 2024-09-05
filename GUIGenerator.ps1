@@ -22,11 +22,6 @@ $label1form1.Text = "What Language do you want to code your UI?"
 $label1form1.AutoSize = $true
 $label1form1.Location = New-Object System.Drawing.Point(10,15)
 
-$button1form1 = New-Object System.Windows.Forms.Button
-$button1form1.Text = "Write template"
-$button1form1.Size = New-Object System.Drawing.Size(110,30)
-$button1form1.Location = New-Object System.Drawing.Point(10,70)
-
 $list1form1 = New-Object System.Windows.Forms.ListBox
 $list1form1.Items.Add("Python")
 $list1form1.Items.Add("HTML")
@@ -90,7 +85,6 @@ root.mainloop()
 # Add controls to the form
 $form.Controls.Add($output1form1)
 $form.Controls.Add($textbox1form1)
-$form.Controls.Add($button1form1)
 $form.Controls.Add($label1form1)
 $form.Controls.Add($list1form1)
 
